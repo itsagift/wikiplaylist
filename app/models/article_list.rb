@@ -1,0 +1,2 @@
+class ArticleList < ApplicationRecord
+end
