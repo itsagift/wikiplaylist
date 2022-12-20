@@ -5,28 +5,52 @@
 #   git config --global core.excludesfile '~/.gitignore_global'
 
 # Ignore bundler config.
-/.bundle
+/backend/.bundle
 
 # Ignore all logfiles and tempfiles.
-/log/*
-/tmp/*
-!/log/.keep
-!/tmp/.keep
+/backend/log/*
+/backend/tmp/*
+!/backend/log/.keep
+!/backend/tmp/.keep
 
 # Ignore pidfiles, but keep the directory.
-/tmp/pids/*
-!/tmp/pids/
-!/tmp/pids/.keep
+/backend/tmp/pids/*
+!/backend/tmp/pids/
+!/backend/tmp/pids/.keep
 
 # Ignore uploaded files in development.
-/storage/*
-!/storage/.keep
-/tmp/storage/*
-!/tmp/storage/
-!/tmp/storage/.keep
+/backend/storage/*
+!/backend/storage/.keep
+/backend/tmp/storage/*
+!/backend/tmp/storage/
+!/backend/tmp/storage/.keep
 
-/public/assets
+/backend/public/assets
 
 # Ignore master key for decrypting credentials and more.
-/config/master.key
-/config/environment_variables.rb
+/backend/config/master.key
+/backend/config/environment_variables.rb
+
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/client/node_modules
+/client/.pnp
+/client/.pnp.js
+
+# testing
+/client/coverage
+
+# production
+/client/build
+
+# misc
+/client/.DS_Store
+/client/.env.local
+/client/.env.development.local
+/client/.env.test.local
+/client/.env.production.local
+
+/client/npm-debug.log*
+/client/yarn-debug.log*
+/client/yarn-error.log*
